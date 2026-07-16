@@ -7,17 +7,18 @@ import {
 } from "lucide-react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Logo from "../assets/Logo.jpg";
+import HeroVideo from "../assets/FINAL - 2K.MOV";
 
 export default function Home() {
 
   const stages = [
     {
-      title: "Early Years",
-      description:
-        "A nurturing environment where curiosity, creativity, and confidence begin to grow.",
-      image:
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7",
-    },
+  title: "Early Years",
+  description:
+    "A nurturing environment where curiosity, creativity, and confidence begin to grow.",
+  image: Logo,
+},,
     {
       title: "Primary School",
       description:
@@ -94,98 +95,174 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section
-        className="relative h-screen bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b')",
-        }}
+<section
+  className="
+    relative
+    h-screen
+    overflow-hidden
+  "
+>
+
+
+  {/* VIDEO BACKGROUND */}
+
+  <video
+    className="
+      absolute
+      inset-0
+      h-full
+      w-full
+      object-cover
+    "
+    src={HeroVideo}
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+
+
+
+  {/* OVERLAY */}
+
+  <div
+    className="
+      absolute
+      inset-0
+      bg-primary/75
+    "
+  />
+
+
+
+  {/* CONTENT */}
+
+  <div
+    className="
+      relative
+      z-10
+      flex
+      h-full
+      items-center
+    "
+  >
+
+    <div
+      className="
+        mx-auto
+        max-w-7xl
+        px-6
+      "
+    >
+
+
+      <span
+        className="
+          rounded-full
+          bg-highlight
+          px-5
+          py-2
+          font-semibold
+          text-primary
+        "
+      >
+        Welcome To Our School
+      </span>
+
+
+
+      <h1
+        className="
+          mt-8
+          max-w-4xl
+          text-5xl
+          font-bold
+          text-white
+          md:text-7xl
+        "
       >
 
-        <div className="absolute inset-0 bg-primary/75"></div>
+        Inspiring Young Minds,
+
+        <span className="text-highlight">
+          {" "}Every Day
+        </span>
+
+      </h1>
 
 
-        <div className="relative z-10 flex h-full items-center">
-
-          <div className="mx-auto max-w-7xl px-6">
 
 
-            <span className="
-              rounded-full
-              bg-highlight
-              px-5 py-2
-              font-semibold
-              text-primary
-            ">
-              Welcome To Our School
-            </span>
+      <p
+        className="
+          mt-6
+          max-w-2xl
+          text-lg
+          text-white/90
+        "
+      >
+        A welcoming school community where every child is encouraged
+        to discover their talents and achieve their potential.
+      </p>
 
 
-            <h1 className="
-              mt-8
-              max-w-4xl
-              text-5xl
-              font-bold
-              text-white
-              md:text-7xl
-            ">
-              Inspiring Young Minds,
-              <span className="text-highlight">
-                {" "}Every Day
-              </span>
-            </h1>
 
 
-            <p className="
-              mt-6
-              max-w-2xl
-              text-lg
-              text-white/90
-            ">
-              A welcoming school community where every child is encouraged
-              to discover their talents and achieve their potential.
-            </p>
+      <div
+        className="
+          mt-10
+          flex
+          gap-4
+        "
+      >
 
 
-            <div className="mt-10 flex gap-4">
+        <button
+          className="
+            rounded-xl
+            bg-accent
+            px-8
+            py-4
+            font-semibold
+            text-white
+            transition
+            hover:bg-highlight
+            hover:text-primary
+          "
+        >
+          Arrange A Visit
+        </button>
 
 
-              <button className="
-                rounded-xl
-                bg-accent
-                px-8 py-4
-                font-semibold
-                text-white
-                transition
-                hover:bg-highlight
-                hover:text-primary
-              ">
-                Arrange A Visit
-              </button>
+
+        <button
+          className="
+            rounded-xl
+            border-2
+            border-white
+            px-8
+            py-4
+            font-semibold
+            text-white
+            hover:bg-white
+            hover:text-primary
+          "
+        >
+          Admissions
+        </button>
 
 
-              <button className="
-                rounded-xl
-                border-2
-                border-white
-                px-8 py-4
-                font-semibold
-                text-white
-                hover:bg-white
-                hover:text-primary
-              ">
-                Admissions
-              </button>
+
+      </div>
 
 
-            </div>
+    </div>
 
 
-          </div>
+  </div>
 
-        </div>
 
-      </section>
+</section>
 
 
 
