@@ -8,8 +8,9 @@ import {
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Logo from "../assets/Logo.jpg";
-import HeroVideo from "../assets/DOWN.MOV";
+import HeroVideo from "../assets/DOWN.mp4";
 import Full from "../assets/DSCF2478.jpg";
+console.log(HeroVideo);
 
 
 export default function Home() {
@@ -122,7 +123,7 @@ export default function Home() {
   muted
   playsInline
 >
-  <source src={HeroVideo} type="video/quicktime" />
+  <source src={HeroVideo} type="video/mp4" />
 </video>
 
 
