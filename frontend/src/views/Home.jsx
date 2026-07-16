@@ -559,7 +559,7 @@ export default function Home() {
             ["650+", "Students"],
             ["98%", "Success Rate"],
             ["45+", "Activities"],
-            ["75", "Years"],
+            ["28", "Years"],
           ].map(stat => (
 
             <div key={stat[1]}>
