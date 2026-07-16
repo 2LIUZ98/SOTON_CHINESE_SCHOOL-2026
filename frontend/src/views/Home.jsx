@@ -79,7 +79,7 @@ export default function Home() {
         Full,
     },
     {
-      title: "Music Celebration Evening",
+      title: "Annual End of Year Show 2026",
       date: "4 July 2026",
       image:
         Full,
