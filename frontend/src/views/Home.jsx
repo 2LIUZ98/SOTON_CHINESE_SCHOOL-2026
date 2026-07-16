@@ -108,20 +108,22 @@ export default function Home() {
 
   {/* VIDEO BACKGROUND */}
 
-  <video
-    className="
-      absolute
-      inset-0
-      h-full
-      w-full
-      object-cover
-    "
-    src={HeroVideo}
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
+ <video
+  className="
+    absolute
+    inset-0
+    z-0
+    h-full
+    w-full
+    object-cover
+  "
+  autoPlay
+  loop
+  muted
+  playsInline
+>
+  <source src={HeroVideo} type="video/quicktime" />
+</video>
 
 
 
