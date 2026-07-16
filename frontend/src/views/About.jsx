@@ -37,8 +37,9 @@ export default function About() {
           text-lg
           text-white/80
         ">
-          Providing Chinese language education and cultural learning
-          opportunities for children and families in Southampton.
+        Providing Chinese language education and cultural learning 
+        opportunities for children and families in Southampton and surrounding areas, including Portsmouth and Salisbury.
+
         </p>
 
 
