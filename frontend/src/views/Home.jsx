@@ -5,6 +5,7 @@ import {
   Heart,
   Users,
 } from "lucide-react";
+import Header from "../components/Header";
 
 export default function Home() {
 
@@ -86,6 +87,8 @@ export default function Home() {
   return (
 
     <div className="text-text">
+
+      <Header />
 
 
       {/* HERO */}
