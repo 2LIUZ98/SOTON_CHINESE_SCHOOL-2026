@@ -9,6 +9,10 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactForm />} />
+      <Route
+        path="/about"
+        element={<About />}
+      />
     </Routes>
   );
 }
