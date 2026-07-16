@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function Contact() {
+export default function ContactForm() {
 
   const [loading, setLoading] = useState(false);
 

@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 import Logo from "../assets/Logo.jpg";
 import HeroVideo from "../assets/DOWN.mp4";
 import Full from "../assets/DSCF2478.jpg";
+import { Link } from "react-router-dom";
 console.log(HeroVideo);
 
 
@@ -688,19 +689,23 @@ export default function Home() {
         </h2>
 
 
-        <button className="
-          mt-10
-          rounded-xl
-          bg-highlight
-          px-10
-          py-4
-          font-bold
-          text-primary
-          transition
-          hover:scale-105
-        ">
-          Contact Admissions
-        </button>
+        <Link
+            to="/contact"
+            className="
+            inline-block
+            mt-10
+            rounded-xl
+            bg-highlight
+            px-10
+            py-4
+            font-bold
+            text-primary
+            transition
+            hover:scale-105
+            "
+            >
+            Contact Admissions
+        </Link>
 
 
       </section>
