@@ -8,7 +8,9 @@ import {
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Logo from "../assets/Logo.jpg";
-import HeroVideo from "../assets/FINAL - 1080p.MOV";
+import HeroVideo from "../assets/DOWN.MOV";
+import Full from "../assets/DSCF2478.jpg";
+
 
 export default function Home() {
 
@@ -17,21 +19,21 @@ export default function Home() {
   title: "Early Years",
   description:
     "A nurturing environment where curiosity, creativity, and confidence begin to grow.",
-  image: Logo,
+  image: Full,
 },,
     {
       title: "Primary School",
       description:
         "Building strong foundations through inspiring lessons and meaningful experiences.",
       image:
-        "https://images.unsplash.com/photo-1513258496099-48168024aec0",
+        Full,
     },
     {
       title: "Secondary School",
       description:
         "Preparing students for future success through ambition and leadership.",
       image:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+        Full,
     },
   ];
 
@@ -69,19 +71,19 @@ export default function Home() {
       title: "Annual Sports Festival",
       date: "15 July 2026",
       image:
-        "https://images.unsplash.com/photo-1517649763962-0c623066013b",
+        Full,
     },
     {
       title: "Science Exhibition",
       date: "10 July 2026",
       image:
-        "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+        Full,
     },
     {
       title: "Music Celebration Evening",
       date: "4 July 2026",
       image:
-        "https://images.unsplash.com/photo-1516280440614-37939bbacd81",
+        Full,
     },
   ];
 
@@ -327,14 +329,15 @@ export default function Home() {
 
 
 
-          <img
-            src="https://images.unsplash.com/photo-1513258496099-48168024aec0"
-            className="
-              rounded-3xl
-              shadow-xl
-              object-cover
-            "
-          />
+        <img
+  src={Logo}
+  alt="Soton Chinese School Logo"
+  className="
+    rounded-3xl
+    shadow-xl
+    object-contain
+  "
+/>
 
 
         </div>
