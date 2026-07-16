@@ -8,7 +8,7 @@ import {
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Logo from "../assets/Logo.jpg";
-import HeroVideo from "../assets/FINAL - 2K.MOV";
+import HeroVideo from "../assets/FINAL - 1080p.MOV";
 
 export default function Home() {
 
