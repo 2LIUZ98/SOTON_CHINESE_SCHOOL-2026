@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import HomePage from "./views/Home";
 import ContactForm from "./views/Contact";
+import About from "./views/About";
 
 export default function App() {
   return (
