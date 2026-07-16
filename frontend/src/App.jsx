@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from "./views/Home";
 import ContactForm from "./views/Contact";
 import About from "./views/About";
+import Apply from "./views/Apply";
 
 export default function App() {
   return (
@@ -13,6 +14,11 @@ export default function App() {
       <Route
         path="/about"
         element={<About />}
+      />
+
+      <Route
+        path="/apply"
+        element={<Apply />}
       />
     </Routes>
   );
