@@ -16,27 +16,25 @@ console.log(HeroVideo);
 export default function Home() {
 
   const stages = [
-    {
-  title: "Early Years",
-  description:
-    "A nurturing environment where curiosity, creativity, and confidence begin to grow.",
-  image: Full,
-},,
-    {
-      title: "Primary School",
-      description:
-        "Building strong foundations through inspiring lessons and meaningful experiences.",
-      image:
-        Full,
-    },
-    {
-      title: "Secondary School",
-      description:
-        "Preparing students for future success through ambition and leadership.",
-      image:
-        Full,
-    },
-  ];
+  {
+    title: "Chinese Class",
+    description:
+      "A fully immersive Chinese learning environment where students develop their listening, speaking, reading, and writing skills through Chinese-only lessons.",
+    image: Full,
+  },
+  {
+    title: "Dual Language Class (Chinese + English)",
+    description:
+      "A bilingual learning programme where students learn Chinese with support from both Chinese and English, building confidence and strong language foundations.",
+    image: Full,
+  },
+  {
+    title: "GCSE",
+    description:
+      "Preparing students for GCSE Chinese examinations with focused lessons, exam techniques, and academic guidance to achieve their best results.",
+    image: Full,
+  },
+];
 
 
   const features = [
