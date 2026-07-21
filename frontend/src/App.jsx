@@ -5,6 +5,7 @@ import HomePage from "./views/Home";
 import ContactForm from "./views/Contact";
 import About from "./views/About";
 import Apply from "./views/Apply";
+import Admissions from "./views/Admissions";
 
 export default function App() {
   return (
@@ -19,6 +20,11 @@ export default function App() {
       <Route
         path="/apply"
         element={<Apply />}
+      />
+
+      <Route
+        path="/admissions"
+        element={<Admissions />}
       />
     </Routes>
   );
