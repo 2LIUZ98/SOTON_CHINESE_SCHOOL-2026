@@ -74,163 +74,155 @@ export default function Header() {
 
           {/* ACADEMICS DROPDOWN */}
 
-          <div
-            className="relative group"
-          >
+<div className="relative group py-2 -my-2">
 
-            <button
-              className="
-              flex
-              items-center
-              gap-1
-              hover:text-highlight
-              transition
-              "
-            >
+  <button
+    className="
+      flex
+      items-center
+      gap-1
+      hover:text-highlight
+      transition
+    "
+  >
+    Academics
+    <ChevronDown size={16} />
+  </button>
 
-              Academics
+  <div
+    className="
+      absolute
+      left-0
+      top-full
+      mt-0
+      hidden
+      group-hover:block
+      bg-white
+      text-text
+      rounded-xl
+      shadow-xl
+      w-48
+      p-3
+      z-50
+    "
+  >
 
-              <ChevronDown size={16}/>
+    <Link
+      to="/courses"
+      className="
+        block
+        p-3
+        rounded-lg
+        hover:bg-secondary
+      "
+    >
+      Courses
+    </Link>
 
-            </button>
+    <Link
+      to="/activities"
+      className="
+        block
+        p-3
+        rounded-lg
+        hover:bg-secondary
+      "
+    >
+      Activities
+    </Link>
 
+    <Link
+      to="/teachers"
+      className="
+        block
+        p-3
+        rounded-lg
+        hover:bg-secondary
+      "
+    >
+      Teachers
+    </Link>
 
-            <div
-              className="
-              absolute
-              hidden
-              group-hover:block
-              top-8
-              left-0
-              bg-white
-              text-text
-              rounded-xl
-              shadow-xl
-              w-48
-              p-3
-              "
-            >
+  </div>
 
-              <Link
-                to="/courses"
-                className="
-                block
-                p-3
-                rounded-lg
-                hover:bg-secondary
-                "
-              >
-                Courses
-              </Link>
-
-
-              <Link
-                to="/activities"
-                className="
-                block
-                p-3
-                rounded-lg
-                hover:bg-secondary
-                "
-              >
-                Activities
-              </Link>
-
-
-              <Link
-                to="/teachers"
-                className="
-                block
-                p-3
-                rounded-lg
-                hover:bg-secondary
-                "
-              >
-                Teachers
-              </Link>
-
-
-            </div>
-
-
-          </div>
-
+</div>
 
 
 
           {/* ADMISSIONS DROPDOWN */}
 
-          <div className="relative group">
+<div className="relative group py-2 -my-2">
 
-            <button
-              className="
-                flex
-                items-center
-                gap-1
-                hover:text-highlight
-                transition
-              "
-            >
-              Admissions
-              <ChevronDown size={16} />
-            </button>
+  <button
+    className="
+      flex
+      items-center
+      gap-1
+      hover:text-highlight
+      transition
+    "
+  >
+    Admissions
+    <ChevronDown size={16} />
+  </button>
 
-            <div
-              className="
-                absolute
-                hidden
-                group-hover:block
-                top-8
-                left-0
-                bg-white
-                text-text
-                rounded-xl
-                shadow-xl
-                w-64
-                p-3
-              "
-            >
+  <div
+    className="
+      absolute
+      left-0
+      top-full
+      mt-0
+      hidden
+      group-hover:block
+      bg-white
+      text-text
+      rounded-xl
+      shadow-xl
+      w-64
+      p-3
+      z-50
+    "
+  >
 
-              <Link
-                to="/admissions"
-                className="
-                  block
-                  rounded-lg
-                  p-3
-                  hover:bg-secondary
-                "
-              >
-                Admission Process
-              </Link>
+    <Link
+      to="/admissions"
+      className="
+        block
+        rounded-lg
+        p-3
+        hover:bg-secondary
+      "
+    >
+      Admission Process
+    </Link>
 
-              <Link
-                to="/apply"
-                className="
-                  block
-                  rounded-lg
-                  p-3
-                  hover:bg-secondary
-                "
-              >
-                Application Form
-              </Link>
+    <Link
+      to="/apply"
+      className="
+        block
+        rounded-lg
+        p-3
+        hover:bg-secondary
+      "
+    >
+      Application Form
+    </Link>
 
-              <Link
-                to="/tuition-fees"
-                className="
-                  block
-                  rounded-lg
-                  p-3
-                  hover:bg-secondary
-                "
-              >
-                Tuition Fee Information
-              </Link>
+    <Link
+      to="/tuition-fees"
+      className="
+        block
+        rounded-lg
+        p-3
+        hover:bg-secondary
+      "
+    >
+      Tuition Fee Information
+    </Link>
 
-            </div>
+  </div>
 
-          </div>
-
+</div>
 
 
           <Link
@@ -364,68 +356,156 @@ export default function Header() {
           </Link>
 
 
+          {/* ACADEMICS DROPDOWN */}
+
+<div className="relative group py-2 -my-2">
+
+  <button
+    className="
+      flex
+      items-center
+      gap-1
+      hover:text-highlight
+      transition
+    "
+  >
+    Academics
+    <ChevronDown size={16} />
+        </button>
+
+        <div
+          className="
+            absolute
+            left-0
+            top-full
+            mt-0
+            hidden
+            group-hover:block
+            bg-white
+            text-text
+            rounded-xl
+            shadow-xl
+            w-48
+            p-3
+            z-50
+          "
+        >
+
           <Link
             to="/courses"
-            onClick={()=>setOpen(false)}
+            className="
+              block
+              p-3
+              rounded-lg
+              hover:bg-secondary
+            "
           >
-            Academics
+            Courses
           </Link>
 
+          <Link
+            to="/activities"
+            className="
+              block
+              p-3
+              rounded-lg
+              hover:bg-secondary
+            "
+          >
+            Activities
+          </Link>
 
-          <div>
+          <Link
+            to="/teachers"
+            className="
+              block
+              p-3
+              rounded-lg
+              hover:bg-secondary
+            "
+          >
+            Teachers
+          </Link>
 
-            <button
-              onClick={() => setAdmissionsOpen(!admissionsOpen)}
-              className="
-                flex
-                w-full
-                items-center
-                justify-between
-              "
-            >
-              Admissions
-              <ChevronDown
-                size={18}
-                className={
-                  admissionsOpen
-                    ? "rotate-180 transition"
-                    : "transition"
-                }
-              />
-            </button>
+        </div>
 
-            {admissionsOpen && (
-
-              <div className="ml-4 mt-3 flex flex-col gap-3">
-
-                <Link
-                  to="/admissions"
-                  onClick={() => setOpen(false)}
-                >
-                  Admission Process
-                </Link>
-
-                <Link
-                  to="/apply"
-                  onClick={() => setOpen(false)}
-                >
-                  Application Form
-                </Link>
-
-                <Link
-                  to="/tuition-fees"
-                  onClick={() => setOpen(false)}
-                >
-                  Tuition Fee Information
-                </Link>
-
-              </div>
-
-            )}
-
-          </div>
+      </div>
 
 
+          {/* ADMISSIONS DROPDOWN */}
+
+<div className="relative group py-2 -my-2">
+
+  <button
+    className="
+      flex
+      items-center
+      gap-1
+      hover:text-highlight
+      transition
+    "
+  >
+    Admissions
+    <ChevronDown size={16} />
+  </button>
+
+  <div
+    className="
+      absolute
+      left-0
+      top-full
+      mt-0
+      hidden
+      group-hover:block
+      bg-white
+      text-text
+      rounded-xl
+      shadow-xl
+      w-64
+      p-3
+      z-50
+    "
+  >
+
+    <Link
+      to="/admissions"
+      className="
+        block
+        rounded-lg
+        p-3
+        hover:bg-secondary
+      "
+    >
+      Admission Process
+    </Link>
+
+    <Link
+      to="/apply"
+      className="
+        block
+        rounded-lg
+        p-3
+        hover:bg-secondary
+      "
+    >
+      Application Form
+    </Link>
+
+    <Link
+      to="/tuition-fees"
+      className="
+        block
+        rounded-lg
+        p-3
+        hover:bg-secondary
+      "
+    >
+      Tuition Fee Information
+    </Link>
+
+  </div>
+
+</div>
           <Link
             to="/news"
             onClick={()=>setOpen(false)}
