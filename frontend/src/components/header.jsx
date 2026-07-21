@@ -11,6 +11,7 @@ export default function Header() {
 
   const [open, setOpen] = useState(false);
   const [academicOpen, setAcademicOpen] = useState(false);
+  const [admissionsOpen, setAdmissionsOpen] = useState(false);
 
 
   return (
@@ -157,12 +158,78 @@ export default function Header() {
 
 
 
-          <Link
-            to="/admissions"
-            className="hover:text-highlight transition"
-          >
-            Admissions
-          </Link>
+          {/* ADMISSIONS DROPDOWN */}
+
+          <div className="relative group">
+
+            <button
+              className="
+                flex
+                items-center
+                gap-1
+                hover:text-highlight
+                transition
+              "
+            >
+              Admissions
+              <ChevronDown size={16} />
+            </button>
+
+            <div
+              className="
+                absolute
+                hidden
+                group-hover:block
+                top-8
+                left-0
+                bg-white
+                text-text
+                rounded-xl
+                shadow-xl
+                w-64
+                p-3
+              "
+            >
+
+              <Link
+                to="/admissions"
+                className="
+                  block
+                  rounded-lg
+                  p-3
+                  hover:bg-secondary
+                "
+              >
+                Admission Process
+              </Link>
+
+              <Link
+                to="/apply"
+                className="
+                  block
+                  rounded-lg
+                  p-3
+                  hover:bg-secondary
+                "
+              >
+                Application Form
+              </Link>
+
+              <Link
+                to="/tuition-fees"
+                className="
+                  block
+                  rounded-lg
+                  p-3
+                  hover:bg-secondary
+                "
+              >
+                Tuition Fee Information
+              </Link>
+
+            </div>
+
+          </div>
 
 
 
@@ -305,12 +372,58 @@ export default function Header() {
           </Link>
 
 
-          <Link
-            to="/admissions"
-            onClick={()=>setOpen(false)}
-          >
-            Admissions
-          </Link>
+          <div>
+
+            <button
+              onClick={() => setAdmissionsOpen(!admissionsOpen)}
+              className="
+                flex
+                w-full
+                items-center
+                justify-between
+              "
+            >
+              Admissions
+              <ChevronDown
+                size={18}
+                className={
+                  admissionsOpen
+                    ? "rotate-180 transition"
+                    : "transition"
+                }
+              />
+            </button>
+
+            {admissionsOpen && (
+
+              <div className="ml-4 mt-3 flex flex-col gap-3">
+
+                <Link
+                  to="/admissions"
+                  onClick={() => setOpen(false)}
+                >
+                  Admission Process
+                </Link>
+
+                <Link
+                  to="/apply"
+                  onClick={() => setOpen(false)}
+                >
+                  Application Form
+                </Link>
+
+                <Link
+                  to="/tuition-fees"
+                  onClick={() => setOpen(false)}
+                >
+                  Tuition Fee Information
+                </Link>
+
+              </div>
+
+            )}
+
+          </div>
 
 
           <Link
