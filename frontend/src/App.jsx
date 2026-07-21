@@ -30,7 +30,7 @@ export default function App() {
       />
 
       <Route
-        path="/fee"
+        path="/tuition-fees"
         element={<Fee />}
       />
     </Routes>
