@@ -7,6 +7,8 @@ import About from "./views/About";
 import Apply from "./views/Apply";
 import Admissions from "./views/Admissions";
 
+import Fee from "./views/Fee";
+
 export default function App() {
   return (
     <Routes>
@@ -25,6 +27,11 @@ export default function App() {
       <Route
         path="/admissions"
         element={<Admissions />}
+      />
+
+      <Route
+        path="/fee"
+        element={<Fee />}
       />
     </Routes>
   );
